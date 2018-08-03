@@ -1,0 +1,51 @@
+.box{
+	background-color: red;
+	height: 60px;
+	width: 60px;
+	margin: 10px;
+	padding: 10px;
+	display: inline-block;
+	}
+.solid_border{
+	border: 2px solid black;
+	}
+.dual_border{
+	border: 2px double black;
+}
+.dashed_border{
+	border: 2px dashed green;
+}
+.dott_border{
+	border: 4px dotted green;
+}
+.none{
+	border: none;
+}
+.box1{
+	background-color: pink;
+	height: 70px;
+	width: 180px;
+	border: none;
+	padding: 40px
+}
+.box2{
+	background-color: green;
+	height: 25px;
+	width: 100px;
+	border: 10px solid red;
+	padding: 5px;
+}
+.box3{
+	background-color: pink;
+	height: 100px;
+	width: 150px;
+	border: none;
+	padding: 40px
+}
+.box4{
+	background-color: green;
+	height: 25px;
+	width: 80px;
+	border: 10px solid red;
+	padding: 5px;
+}
