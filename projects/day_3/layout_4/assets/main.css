@@ -1,0 +1,14 @@
+.box1{
+	border: 20px solid purple;
+	height: 467px;
+	width: 400px;
+}
+.box2{
+	border-left: 20px solid green;
+	border-right: 20px solid grey;
+	border-top: 20px solid blue;
+	border-bottom: 20px solid yellow;
+	background-color: red;
+	padding: 5px;
+	color: white;
+}
