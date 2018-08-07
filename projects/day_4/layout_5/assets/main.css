@@ -1,0 +1,23 @@
+header{
+	background-color: green;
+	padding: 20px;
+}
+a{
+	margin-left: 200px;
+	text-decoration: none;
+}
+section{
+	color: red;
+	width: 50%;
+	margin: 0px auto;
+}
+img{
+	height: 100px;
+	width: 100px;
+	display: inline-block;
+	margin-left: 180px;
+	margin-top: 50px;
+}
+p{
+	text-align: center;
+}
