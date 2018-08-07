@@ -1,0 +1,32 @@
+body{
+	background-color: #282e2b;
+}
+h1{
+	font-size: 36px;
+	font-weight: 400;
+	color: white;
+	text-shadow: 2px 2px 5px black;
+	font-family:"roboto slab"
+}
+.Design{
+	float: left;
+	color: red;
+}
+.Design2{
+	float: right;
+	color: white;
+}
+p{
+	clear: both;
+	font-size: 15px;
+}
+div{
+	width: 1000px;
+	margin: 0 auto;
+}
+.heading1{
+	font-family: "varela round"
+}
+.heading2{
+	font-family: "Muli"
+}
