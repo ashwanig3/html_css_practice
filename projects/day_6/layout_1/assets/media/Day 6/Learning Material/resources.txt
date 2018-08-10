@@ -1,0 +1,4 @@
+1. https://learn.shayhowe.com/html-css/adding-media/
+						
+2. https://learn.shayhowe.com/html-css/building-forms/
+	* https://internetingishard.com/html-and-css/forms/
