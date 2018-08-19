@@ -1,10 +1,17 @@
+
+
+
+
 *{
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
 }
 
-
+.container {
+	display: grid;
+	grid-gap: 60px;
+}
 .hero{
 	display: grid;
 	height: 300px;
@@ -26,7 +33,7 @@
 	background-size: cover;
 	background-position: center;
 	display: grid;
-	grid-template-columns:30% 70%;
+	grid-template-columns:25% 70%;
 	padding: 20px;
 	align-items: center;
 	}
@@ -36,9 +43,11 @@
 	color: white;
 	font-weight: 700;
 	grid-row: 1/2;
+	
 }
 .hello p{
 	color: white;
+	
 
 }
 
@@ -48,10 +57,54 @@
 
 .gallery{
 	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	justify-content:center; 
-	align-content: center;
+	grid-template-columns: repeat(3, 250px);
+	justify-content: center;
+	grid-gap: 10px;
+	
 	}
 figure img{
 	width: 20vw;
 }
+
+
+@media screen and (max-width:480px){
+	
+
+	.head{
+		font-size: 15px;
+		
+			}
+	.head img{
+		height: 25px;
+		margin-left: 10px;
+	}
+	.hello{
+		
+		background-size: cover;
+		background-position: center;
+		grid-template-columns: none;
+		grid-template-areas: 
+		"h1"
+		"p"
+	}
+	.hello h1{
+		font-size: 70px;
+		font-weight: 600;
+		grid-area: h1;
+	}
+	.hello p{
+		font-size: 15px;
+		grid-area: p;
+	}
+
+	.gallery{
+	grid-template-columns: none;
+	justify-content: left;
+
+	}
+	figure img{
+	width: 100vw;
+	}
+	}
+
+	
