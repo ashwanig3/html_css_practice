@@ -182,7 +182,7 @@ Header
 }
 .skill__fig {
 	margin: 30px auto;
-	width: 52%;
+	width: 65%;
 	padding: 0 4rem;
 
 }
@@ -255,8 +255,13 @@ Header
 	margin:1rem 0 0 8rem;
 	
 }
+
+.social__item{
+	list-style: none;
+}
 .social__item a {
 	border-radius: 50%;
+	text-decoration: none;
 	border:1px solid white;
 	color: white;
 	font-size: 1.2rem;
@@ -266,6 +271,11 @@ Header
 	justify-content: center;
 	align-items: center;
 	margin: 0 10px;
+	transform: rotate(0deg);
+	transition: all 0.5s ease-in-out;
+}
+.social__item a:hover {
+	transform: rotate(360deg);
 }
 
 .contact__copyright {
