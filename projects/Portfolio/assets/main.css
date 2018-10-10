@@ -7,7 +7,7 @@ html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
+small, strike, strong, sub, sup, tt, var,auto
 b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
@@ -54,7 +54,8 @@ table {
 
 
 *, *:before, *:after {
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
 }
 
 /*====================================
@@ -66,22 +67,33 @@ Header
 	width: 4rem;
 	height: 4rem;
 	border-radius: 50%;
+	-webkit-transition: -webkit-transform 0.3s ease-in-out;
+	transition: -webkit-transform 0.3s ease-in-out;
+	-o-transition: transform 0.3s ease-in-out;
 	transition: transform 0.3s ease-in-out;
+	transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 .hero__img:hover {
-	transform: scale(1.2);
+	-webkit-transform: scale(1.2);
+	    -ms-transform: scale(1.2);
+	        transform: scale(1.2);
 }
 .top-navbar {
+	display: -ms-grid;
 	display: grid;
-	grid-template-columns: 1fr 1fr;
+	-ms-grid-columns: 1fr 1fr;
+	    grid-template-columns: 1fr 1fr;
 	padding: 30px;
 	
 }
 
 
 .nav-menu {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-around;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
 	padding: 20px;
 
 }
@@ -94,6 +106,8 @@ Header
 }
 .nav-menu__item a:hover {
 	color: black;
+	-webkit-transition: 0.3s ease-in-out;
+	-o-transition: 0.3s ease-in-out;
 	transition: 0.3s ease-in-out;
 }
 .hero {
@@ -109,7 +123,9 @@ Header
 	position: absolute;
 	left: 50%;
 	top: 50%;
-	transform: translate(-50%,-50%);
+	-webkit-transform: translate(-50%,-50%);
+	    -ms-transform: translate(-50%,-50%);
+	        transform: translate(-50%,-50%);
 }
 .name-heading {
 	font-size: 60px;
@@ -144,7 +160,9 @@ Header
 	width: 8rem;
 	position: absolute;
 	left: 50%;
-	transform: translate(-50%);
+	-webkit-transform: translate(-50%);
+	    -ms-transform: translate(-50%);
+	        transform: translate(-50%);
 }
 .wrapper {
 	padding: 3rem;
@@ -215,11 +233,16 @@ Header
 	width: 28%;
 	height: 50%;
 	margin: 20px;
+	-webkit-transition: 0.5s ease-in-out;
+	-o-transition: 0.5s ease-in-out;
 	transition: 0.5s ease-in-out;
-	box-shadow: 5px 10px rgba(0,0,0,0.6);
+	-webkit-box-shadow: 5px 10px rgba(0,0,0,0.6);
+	        box-shadow: 5px 10px rgba(0,0,0,0.6);
 }
 .gallery__item:hover {
-	transform: scale(1.2);
+	-webkit-transform: scale(1.2);
+	    -ms-transform: scale(1.2);
+	        transform: scale(1.2);
 }
 
 .gallery__link {
@@ -251,6 +274,8 @@ Header
 	text-align: center;
 }
 .social {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	margin:1rem 0 0 8rem;
 	
@@ -265,17 +290,29 @@ Header
 	border:1px solid white;
 	color: white;
 	font-size: 1.2rem;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;;
 	height: 40px;
 	width:40px;
-	justify-content: center;
-	align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	margin: 0 10px;
-	transform: rotate(0deg);
+	-webkit-transform: rotate(0deg);
+	    -ms-transform: rotate(0deg);
+	        transform: rotate(0deg);
+	-webkit-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
 	transition: all 0.5s ease-in-out;
 }
 .social__item a:hover {
-	transform: rotate(360deg);
+	-webkit-transform: rotate(360deg);
+	    -ms-transform: rotate(360deg);
+	        transform: rotate(360deg);
 }
 
 .contact__copyright {
@@ -356,7 +393,9 @@ Header
 		position: absolute;
 		left: 50%;
 		top: 60%;
-		transform: translate(-50%, -60%);
+		-webkit-transform: translate(-50%, -60%);
+		    -ms-transform: translate(-50%, -60%);
+		        transform: translate(-50%, -60%);
 	}
 	.user-me {
 		width: 6rem;
@@ -380,7 +419,9 @@ Header
 	
 	}
 	.gallery__item:hover {
-		transform: none;
+		-webkit-transform: none;
+		    -ms-transform: none;
+		        transform: none;
 	}
 	.skill__fig {
 	margin: 30px auto;
@@ -413,6 +454,11 @@ Header
 		width: 30px;
 		font-size: 1rem;
 	}
+	.social__item a:hover {
+		-webkit-transform: rotate(0deg);
+		    -ms-transform: rotate(0deg);
+		        transform: rotate(0deg);
+	}
 }
 
 
@@ -439,6 +485,8 @@ Header
 	}
 	.skill__fig {
 	margin: 30px auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 85%;
 	}
@@ -451,5 +499,10 @@ Header
 	}
 	.about-me {
 		padding: 0;
+	}
+	.social__item a:hover {
+		-webkit-transform: rotate(0deg);
+		    -ms-transform: rotate(0deg);
+		        transform: rotate(0deg);
 	}
 }
