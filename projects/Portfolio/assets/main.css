@@ -67,16 +67,18 @@ Header
 	width: 4rem;
 	height: 4rem;
 	border-radius: 50%;
-	-webkit-transition: -webkit-transform 0.3s ease-in-out;
-	transition: -webkit-transform 0.3s ease-in-out;
-	-o-transition: transform 0.3s ease-in-out;
-	transition: transform 0.3s ease-in-out;
-	transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+	-webkit-transition: -webkit-transform 0.5s ease-in-out;
+	transition: -webkit-transform 0.5s ease-in-out;
+	-o-transition: transform 0.5s ease-in-out;
+	transition: transform 0.5s ease-in-out;
+	transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+	transform: rotate(0deg);
 }
 .hero__img:hover {
-	-webkit-transform: scale(1.2);
+	/*-webkit-transform: scale(1.2);
 	    -ms-transform: scale(1.2);
-	        transform: scale(1.2);
+	        transform: scale(1.2);*/
+	        transform: rotate(360deg);
 }
 .top-navbar {
 	display: -ms-grid;
@@ -216,10 +218,14 @@ Header
 /*====================================
 			project section
 ====================================*/
-
 .project {
 	background-color: rgba(143,188,143,0.6);
 	padding-top: 30px;
+}
+.project_skill {
+	text-align: left;
+	margin-top: 2rem;
+	text-decoration: underline;
 }
 .project__header {
 	margin: 0;
@@ -250,6 +256,38 @@ Header
 	font-size: 12px;
 }
 
+.gal_img {
+	display: block;
+	transform: translateZ(-70px); 
+	box-shadow: none;
+	width: 100%;
+	height: 70%;
+	margin-left: 0;
+}
+.js_project_container{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.gal_parent {
+	transform-style: preserve-3d;
+	transition: 3s;
+	width: 30%;
+}
+.gal_parent:hover {
+	transform: rotateX(90deg) translateZ(50px);
+}
+.js_project_heading {
+	font-family: 'Luckiest Guy', cursive;
+}
+figcaption {
+	background-color: black;
+	transform: rotateX(-90deg) translateY(100%);
+	color: white;
+	transition: 2s;
+	padding: 20px;
+	transform-origin: 100% 0;
+}
 /*====================================
 			footer section
 ====================================*/
@@ -412,11 +450,24 @@ Header
 	.project__gallery {
 		padding: 0;
 	}
+	.project_skill {
+	text-align: center;
+	margin-top: 2rem;
+}
+.js_project_container{
+	display: block;
+}
+figcaption {
+	display: none;
+}
+.gal_parent {
+	width: 100%;
+}
 	.gallery__item {
 	width: 90%;
 	height: 70%;
 	margin: 10px;
-	
+	box-shadow: none;
 	}
 	.gallery__item:hover {
 		-webkit-transform: none;
